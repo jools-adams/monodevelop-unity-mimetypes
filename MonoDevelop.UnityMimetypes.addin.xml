@@ -1,0 +1,23 @@
+<Addin namespace   = "MonoDevelop"
+       id          = "Unitay.Mimetypes"  
+       name        = "Unity Mimetypes"  
+       author      = "Julian Adams"
+       copyright   = "MIT/X11"
+       url         = "http://www.monodevelop.com"
+       description = "Adds CG/HLSL mimetype to .shader and .cginc files"
+       category    = "Source Editor Extensions"
+       version     = "1.0">
+       
+    <Dependencies>  
+        <Addin id="Ide" version="4.0"/>  
+<!--        <Addin id="SourceEditor2" version="4.0"/>  -->
+    </Dependencies> 
+    
+    <Extension path = "/MonoDevelop/Core/MimeTypes">  
+      <MimeType id="text/x-cgsrc" _description="CG/HLSL" isText="true"> 
+        <File pattern="*.shader" />  
+        <File pattern="*.cginc" />  
+      </MimeType>  
+    </Extension>  
+      
+</Addin>
